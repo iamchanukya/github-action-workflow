@@ -1,0 +1,14 @@
+name: adding more steps to the workflow
+on:
+    push:
+        branches:
+           - main   
+jobs:
+    lint-job:
+        steps:
+           - name: Checkout the code
+             uses: actions/checkout@v3
+           - name: Install Dependencies
+             run: npm ci
+            
+    
