@@ -2,7 +2,7 @@ name: adding more steps to the workflow
 on:
     push:
         branches:
-           - main   
+           - master  
 jobs:
     lint-job:
         steps:
